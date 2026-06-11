@@ -1,0 +1,632 @@
+/* =========================================================
+   NANGEVILLE â€” STYLESHEET
+   Farben aus dem offiziellen Wappen (Blason):
+   Gold  #c8a020  |  Blau #1b3a6b  |  Rot #8b0000
+   Design: schlicht, gut lesbar, fÃ¼r Zielgruppe 50+
+   ========================================================= */
+
+/* ---- Grundeinstellungen ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* GrÃ¶ÃŸere Basis-SchriftgrÃ¶ÃŸe fÃ¼r bessere Lesbarkeit (50+) */
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  background: #f5f1e8;
+  color: #1e1a14;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #1b3a6b;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #c8a020;
+}
+
+/* ---- Ãœberschriften ---- */
+h1, h2, h3, h4 {
+  font-family: 'IM Fell DW Pica', Georgia, serif;
+  color: #1b3a6b;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+nav {
+  background: #1b3a6b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-coat {
+  width: 32px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.nav-title {
+  font-family: 'IM Fell DW Pica', Georgia, serif;
+  color: #f0d87a;
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* Hamburger-Button (nur auf kleinen Bildschirmen sichtbar) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f0d87a;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #d8e2f5;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f0d87a;
+  border-bottom: 2px solid #c8a020;
+}
+
+/* =========================================================
+   HERO / KOPFBEREICH
+   ========================================================= */
+.hero {
+  background: #1b3a6b;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+  border-bottom: 5px solid #c8a020;
+}
+
+.hero-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a8bce0;
+  margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #f5f1e8;
+  margin-bottom: 0.75rem;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #f0d87a;
+}
+
+.hero-sub {
+  color: #c8d4ec;
+  font-size: 1.15rem;
+  max-width: 540px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-tags {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(240, 216, 122, 0.12);
+  border: 1px solid rgba(240, 216, 122, 0.4);
+  color: #f0d87a;
+  font-size: 0.85rem;
+  padding: 5px 14px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+/* =========================================================
+   ALLGEMEINE SEKTIONEN
+   ========================================================= */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.sec-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #c8a020;
+  padding-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.sec-icon {
+  width: 8px;
+  height: 28px;
+  background: #c8a020;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.sec-icon.gold {
+  background: #c8a020;
+}
+
+.sec-title {
+  font-size: 1.6rem;
+}
+
+.sec-src {
+  font-size: 0.8rem;
+  color: #8a8070;
+  margin-left: auto;
+  letter-spacing: 0.03em;
+}
+
+/* Helle Variante fÃ¼r dunkle HintergrÃ¼nde */
+.light-line {
+  border-bottom-color: #c8a020;
+}
+
+.sec-title.light {
+  color: #f5f1e8;
+}
+
+.sec-src.dark {
+  color: #9a9080;
+}
+
+/* =========================================================
+   KARTEN / NAVIGATION-CARDS (Startseite)
+   ========================================================= */
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.nav-card {
+  background: #fff;
+  border: 1px solid #d8d0c0;
+  border-radius: 6px;
+  padding: 1.25rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-card:hover {
+  border-color: #1b3a6b;
+  box-shadow: 0 2px 10px rgba(27, 58, 107, 0.12);
+}
+
+.nc-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.nc-title {
+  font-family: 'IM Fell DW Pica', Georgia, serif;
+  font-size: 1.2rem;
+  color: #1e1a14;
+  margin-bottom: 0.4rem;
+}
+
+.nc-desc {
+  font-size: 0.95rem;
+  color: #6a6258;
+}
+
+/* =========================================================
+   WAPPEN / BLASON-BEREICH
+   ========================================================= */
+.blason-section {
+  background: #1b3a6b;
+  padding: 2.5rem 1.5rem;
+}
+
+.blason-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.blason-svg-wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(240, 216, 122, 0.35);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.blason-caption {
+  font-size: 0.78rem;
+  color: #a8bce0;
+  margin-top: 0.6rem;
+}
+
+.blason-text h3 {
+  color: #f0d87a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.blason-text p {
+  color: #c8d4ec;
+  font-size: 1rem;
+}
+
+.blason-src {
+  font-size: 0.8rem;
+  color: #7e93b8;
+  margin-top: 0.75rem;
+}
+
+/* =========================================================
+   ZEITLEISTE (Histoire)
+   ========================================================= */
+.timeline-section {
+  background: #f0ebe0;
+  border-top: 1px solid #d8d0c0;
+  border-bottom: 1px solid #d8d0c0;
+  padding: 2.5rem 1.5rem;
+}
+
+.tl-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tl-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.9rem;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #d8d0c0;
+}
+
+.tl-yr {
+  font-family: 'IM Fell DW Pica', Georgia, serif;
+  font-size: 1.1rem;
+  color: #c8a020;
+  min-width: 70px;
+  font-weight: 700;
+}
+
+.tl-txt {
+  font-size: 0.95rem;
+  color: #4a4238;
+}
+
+/* =========================================================
+   STATISTIKEN
+   ========================================================= */
+.stats-strip {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.kpi {
+  background: #fff;
+  border: 1px solid #d8d0c0;
+  border-radius: 6px;
+  padding: 1.1rem;
+  text-align: center;
+}
+
+.kpi-n {
+  font-family: 'IM Fell DW Pica', Georgia, serif;
+  font-size: 2.1rem;
+  color: #1b3a6b;
+}
+
+.kpi-n sup {
+  font-size: 1rem;
+  color: #c8a020;
+}
+
+.kpi-l {
+  font-size: 0.85rem;
+  color: #8a8070;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kpi-s {
+  font-size: 0.72rem;
+  color: #b0a898;
+  margin-top: 0.3rem;
+}
+
+.stats-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.stats-link a {
+  font-size: 1.05rem;
+}
+
+/* Box fÃ¼r ErklÃ¤rtexte zu Statistiken */
+.stat-explain {
+  background: #fff;
+  border-left: 4px solid #c8a020;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #4a4238;
+}
+
+.stat-explain strong {
+  color: #1b3a6b;
+}
+
+/* Quellenangabe-Block */
+.source-note {
+  font-size: 0.8rem;
+  color: #9a8e80;
+  border-top: 1px solid #e0dbd2;
+  padding-top: 0.75rem;
+  margin-top: 1rem;
+}
+
+.source-note a {
+  color: #1b3a6b;
+}
+
+/* =========================================================
+   JOURNAL
+   ========================================================= */
+.journal-section {
+  background: #1e1a14;
+  padding: 2.5rem 1.5rem;
+}
+
+.j-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.news-item {
+  background: #2a2520;
+  border: 1px solid #3a3528;
+  border-radius: 6px;
+  padding: 1.1rem;
+}
+
+.n-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c8a020;
+  margin-bottom: 0.4rem;
+}
+
+.n-title {
+  font-family: 'IM Fell DW Pica', Georgia, serif;
+  color: #e8dfc8;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.n-date {
+  font-size: 0.8rem;
+  color: #8a8070;
+}
+
+.news-item a {
+  color: #f0d87a;
+}
+
+/* =========================================================
+   GALERIE
+   ========================================================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  background: #fff;
+  border: 1px solid #d8d0c0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-caption {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  color: #6a6258;
+}
+
+/* =========================================================
+   FORMULARE (Contact)
+   ========================================================= */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1b3a6b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #c8c0b0;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #1b3a6b;
+  border-color: #1b3a6b;
+}
+
+.btn-submit {
+  background: #1b3a6b;
+  color: #f5f1e8;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.05rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #c8a020;
+  color: #1e1a14;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  background: #141210;
+  padding: 1.5rem;
+  text-align: center;
+  color: #8a8070;
+  font-size: 0.85rem;
+  border-top: 3px solid #c8a020;
+}
+
+footer span {
+  color: #c8a020;
+}
+
+footer a {
+  color: #d8e2f5;
+}
+
+/* =========================================================
+   RESPONSIVE / MOBILGERÃ„TE
+   ========================================================= */
+@media (max-width: 720px) {
+  html {
+    font-size: 17px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0.75rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.7rem 0.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .blason-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .blason-svg-wrap {
+    justify-self: center;
+  }
+
+  .sec-src {
+    margin-left: 0;
+    width: 100%;
+  }
+}
