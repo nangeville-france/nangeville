@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nangeville — Village du Loiret</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-left">
+    <svg class="nav-coat" viewBox="0 0 56 70" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4,4 L52,4 L52,46 Q52,62 28,68 Q4,62 4,46 Z" fill="#c8a020" stroke="#8a6a10" stroke-width="1.5"/>
+      <line x1="28" y1="4" x2="28" y2="68" stroke="#1b3a6b" stroke-width="8"/>
+      <line x1="4" y1="32" x2="52" y2="32" stroke="#1b3a6b" stroke-width="8"/>
+      <text x="16" y="22" text-anchor="middle" font-size="13" fill="#9b1c1c">&#9821;</text>
+      <text x="40" y="22" text-anchor="middle" font-size="13" fill="#9b1c1c">&#9821;</text>
+      <text x="16" y="50" text-anchor="middle" font-size="13" fill="#9b1c1c">&#9821;</text>
+      <text x="40" y="50" text-anchor="middle" font-size="13" fill="#9b1c1c">&#9821;</text>
+    </svg>
+    <span class="nav-title">Nangeville</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="village.html">Le Village</a>
+    <a href="statistiques.html">Statistiques</a>
+    <a href="journal.html">Journal</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-eyebrow">Loiret · Centre-Val de Loire · France</div>
+  <h1>Bienvenue à <em>Nangeville</em></h1>
+  <p class="hero-sub">Un village de 112 âmes, gardien de mille ans d'histoire française — des Templiers à la République.</p>
+  <div class="hero-tags">
+    <span class="tag">~112 habitants</span>
+    <span class="tag">Fondé XIIe siècle</span>
+    <span class="tag">Loiret · 45330</span>
+    <span class="tag">Le Malesherbois</span>
+  </div>
+</header>
+
+<!-- ===== EXPLORER ===== -->
+<section class="section">
+  <div class="sec-head">
+    <div class="sec-icon"></div>
+    <h2 class="sec-title">Explorer le village</h2>
+  </div>
+  <div class="nav-cards">
+    <a class="nav-card" href="histoire.html">
+      <div class="nc-icon">&#128220;</div>
+      <div class="nc-title">Histoire</div>
+      <div class="nc-desc">Des Templiers à la Révolution — mille ans de mémoire locale</div>
+    </a>
+    <a class="nav-card" href="village.html">
+      <div class="nc-icon">&#128506;&#65039;</div>
+      <div class="nc-title">Géographie</div>
+      <div class="nc-desc">Cartes, géologie, hydrographie et paysages du territoire</div>
+    </a>
+    <a class="nav-card" href="statistiques.html">
+      <div class="nc-icon">&#128202;</div>
+      <div class="nc-title">Statistiques</div>
+      <div class="nc-desc">Données officielles INSEE — démographie, densité, évolution</div>
+    </a>
+    <a class="nav-card" href="journal.html">
+      <div class="nc-icon">&#128240;</div>
+      <div class="nc-title">Journal</div>
+      <div class="nc-desc">Actualités régionales, mises à jour automatiquement</div>
+    </a>
+    <a class="nav-card" href="galerie.html">
+      <div class="nc-icon">&#128433;&#65039;</div>
+      <div class="nc-title">Galerie</div>
+      <div class="nc-desc">Photos et cartes postales anciennes du village</div>
+    </a>
+    <a class="nav-card" href="contact.html">
+      <div class="nc-icon">&#9993;&#65039;</div>
+      <div class="nc-title">Contact</div>
+      <div class="nc-desc">Nous contacter, proposer des informations ou des archives</div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== BLASON ===== -->
+<section class="blason-section">
+  <div class="blason-inner">
+    <div class="blason-svg-wrap">
+      <svg viewBox="0 0 90 112" width="90" height="112" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6,6 L84,6 L84,74 Q84,100 45,108 Q6,100 6,74 Z" fill="#c8a020"/>
+        <line x1="45" y1="6" x2="45" y2="108" stroke="#1b3a6b" stroke-width="13"/>
+        <line x1="6" y1="52" x2="84" y2="52" stroke="#1b3a6b" stroke-width="13"/>
+        <text x="23" y="33" text-anchor="middle" font-size="22" fill="#8b0000">&#9821;</text>
+        <text x="67" y="33" text-anchor="middle" font-size="22" fill="#8b0000">&#9821;</text>
+        <text x="23" y="83" text-anchor="middle" font-size="22" fill="#8b0000">&#9821;</text>
+        <text x="67" y="83" text-anchor="middle" font-size="22" fill="#8b0000">&#9821;</text>
+        <path d="M6,6 L84,6 L84,74 Q84,100 45,108 Q6,100 6,74 Z" fill="none" stroke="#8a6a10" stroke-width="2.5"/>
+      </svg>
+      <div class="blason-caption">Blason officiel<br>adopté le 26/09/1995</div>
+    </div>
+    <div class="blason-text">
+      <h3>Les Armoiries de Nangeville</h3>
+      <p>D'or à la croix d'azur, cantonnée de quatre lions de gueules — inspirées des armes de la famille Hurault, seigneurs de Nangeville au XVIIe siècle. Le lion remplace le soleil des Hurault, en référence à la pierre tombale de Pierre de Nangeville, premier sergent du corps du roi.</p>
+      <div class="blason-src">Source : Archives départementales du Loiret · CDHU</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="timeline-section">
+  <div class="tl-inner">
+    <div class="sec-head light-line">
+      <div class="sec-icon gold"></div>
+      <h2 class="sec-title">Quelques repères historiques</h2>
+      <div class="sec-src">Voir la page Histoire pour en savoir plus</div>
+    </div>
+    <div class="tl-grid">
+      <div class="tl-item"><div class="tl-yr">XIIe s.</div><div class="tl-txt">Un Nangevillois dans l'ordre des Templiers</div></div>
+      <div class="tl-item"><div class="tl-yr">XIVe s.</div><div class="tl-txt">Péage à Nangeville sous Philippe le Bel</div></div>
+      <div class="tl-item"><div class="tl-yr">XVIIe s.</div><div class="tl-txt">Les Hurault de l'Hospital possèdent la terre</div></div>
+      <div class="tl-item"><div class="tl-yr">1788</div><div class="tl-txt">Terrible orage du 13 juillet dévaste le village</div></div>
+      <div class="tl-item"><div class="tl-yr">1789</div><div class="tl-txt">Prêtres et vie locale pendant la Révolution</div></div>
+      <div class="tl-item"><div class="tl-yr">1810</div><div class="tl-txt">Jean Pointeau, prisonnier anglais à la Guadeloupe</div></div>
+      <div class="tl-item"><div class="tl-yr">1850</div><div class="tl-txt">Enquête paroissiale — la lessive tabou le vendredi</div></div>
+      <div class="tl-item"><div class="tl-yr">1995</div><div class="tl-txt">Adoption officielle du blason communal</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-strip">
+  <div class="sec-head">
+    <div class="sec-icon"></div>
+    <h2 class="sec-title">Nangeville en chiffres</h2>
+    <div class="sec-src">Source : INSEE · Réf. 2022</div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="kpi-n">112<sup> hab.</sup></div><div class="kpi-l">Population 2022</div><div class="kpi-s">INSEE</div></div>
+    <div class="kpi"><div class="kpi-n">8,59<sup> km²</sup></div><div class="kpi-l">Superficie</div><div class="kpi-s">IGN</div></div>
+    <div class="kpi"><div class="kpi-n">13<sup>/km²</sup></div><div class="kpi-l">Densité</div><div class="kpi-s">INSEE</div></div>
+    <div class="kpi"><div class="kpi-n">138<sup> m</sup></div><div class="kpi-l">Altitude moy.</div><div class="kpi-s">IGN</div></div>
+    <div class="kpi"><div class="kpi-n">1995</div><div class="kpi-l">Blason adopté</div><div class="kpi-s">Archives Loiret</div></div>
+  </div>
+  <div class="stats-link">
+    <a href="statistiques.html">Voir toutes les statistiques détaillées &rarr;</a>
+  </div>
+</section>
+
+<!-- ===== JOURNAL PREVIEW ===== -->
+<section class="journal-section">
+  <div class="j-inner">
+    <div class="sec-head light-line">
+      <div class="sec-icon gold"></div>
+      <h2 class="sec-title light">Journal de Nangeville</h2>
+      <div class="sec-src dark">Mis à jour automatiquement</div>
+    </div>
+    <div class="news-grid">
+      <div class="news-item"><div class="n-tag">Région · Loiret</div><div class="n-title">Actualités de la commune Le Malesherbois et du canton</div><div class="n-date">Voir le journal &rarr;</div></div>
+      <div class="news-item"><div class="n-tag">Archives</div><div class="n-title">Nouvelles découvertes et publications historiques</div><div class="n-date">Mis à jour régulièrement</div></div>
+      <div class="news-item"><div class="n-tag">Météo &amp; Nature</div><div class="n-title">Conditions locales et agenda des événements proches</div><div class="n-date">En temps réel</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 <span>Nangeville</span> · Site réalisé par la famille Lefebvre · <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
