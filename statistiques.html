@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nangeville en chiffres — Statistiques INSEE</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-left">
+    <svg class="nav-coat" viewBox="0 0 56 70" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4,4 L52,4 L52,46 Q52,62 28,68 Q4,62 4,46 Z" fill="#c8a020" stroke="#8a6a10" stroke-width="1.5"/>
+      <line x1="28" y1="4" x2="28" y2="68" stroke="#1b3a6b" stroke-width="8"/>
+      <line x1="4" y1="32" x2="52" y2="32" stroke="#1b3a6b" stroke-width="8"/>
+      <text x="16" y="22" text-anchor="middle" font-size="13" fill="#8b0000">&#9821;</text>
+      <text x="40" y="22" text-anchor="middle" font-size="13" fill="#8b0000">&#9821;</text>
+      <text x="16" y="50" text-anchor="middle" font-size="13" fill="#8b0000">&#9821;</text>
+      <text x="40" y="50" text-anchor="middle" font-size="13" fill="#8b0000">&#9821;</text>
+    </svg>
+    <span class="nav-title">Nangeville</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Accueil</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="famille.html">Familles</a>
+    <a href="village.html">Le Village</a>
+    <a href="statistiques.html" class="active">Statistiques</a>
+    <a href="journal.html">Journal</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-eyebrow">Loiret · Centre-Val de Loire · France</div>
+  <h1>Nangeville en <em>chiffres</em></h1>
+  <p class="hero-sub">Les statistiques officielles du village, issues des recensements de l'INSEE et des données de l'IGN — présentées simplement, avec leurs sources.</p>
+  <div class="hero-tags">
+    <span class="tag">INSEE</span>
+    <span class="tag">IGN</span>
+    <span class="tag">Recensement 2022</span>
+    <span class="tag">Données officielles</span>
+  </div>
+</header>
+
+<!-- ===== KPI PRINCIPAUX ===== -->
+<section class="section">
+  <div class="sec-head">
+    <div class="sec-icon"></div>
+    <h2 class="sec-title">Les chiffres clés</h2>
+    <div class="sec-src">Source : INSEE · IGN</div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="kpi-n">112<sup> hab.</sup></div><div class="kpi-l">Population 2022</div><div class="kpi-s">INSEE</div></div>
+    <div class="kpi"><div class="kpi-n">8,59<sup> km²</sup></div><div class="kpi-l">Superficie</div><div class="kpi-s">IGN</div></div>
+    <div class="kpi"><div class="kpi-n">13<sup>/km²</sup></div><div class="kpi-l">Densité</div><div class="kpi-s">INSEE</div></div>
+    <div class="kpi"><div class="kpi-n">138<sup> m</sup></div><div class="kpi-l">Altitude moy.</div><div class="kpi-s">IGN</div></div>
+    <div class="kpi"><div class="kpi-n">1995</div><div class="kpi-l">Blason adopté</div><div class="kpi-s">Archives Loiret</div></div>
+  </div>
+</section>
+
+<!-- ===== ÉVOLUTION DE LA POPULATION ===== -->
+<section class="timeline-section">
+  <div class="tl-inner">
+    <div class="sec-head light-line">
+      <div class="sec-icon gold"></div>
+      <h2 class="sec-title">Évolution de la population</h2>
+    </div>
+    <p style="color:#4a4238;">Comme une grande partie des villages français, Nangeville a connu un net recul de sa population à partir de la fin du <strong>XIXe siècle</strong>. Ce mouvement, que l'on appelle l'<strong>exode rural</strong>, a vu les habitants des campagnes partir vers les villes et les régions industrielles, attirés par le travail. Le village, autrefois plus peuplé, s'est ainsi peu à peu vidé.</p>
+    <p style="color:#4a4238; margin-top:1rem;">Depuis plusieurs décennies, la population s'est toutefois <strong>stabilisée</strong>, oscillant autour de <strong>110 à 120 habitants</strong>.</p>
+    <div class="stat-explain" style="margin-top:1.25rem;">
+      <strong>Quelques repères récents&nbsp;:</strong>
+      <ul style="margin:0.75rem 0 0 1.25rem;">
+        <li><strong>113 habitants en 2013</strong>, soit une légère baisse de 2,6&nbsp;% par rapport à 2006&nbsp;;</li>
+        <li><strong>112 habitants en 2022</strong> — une population qui se maintient, signe d'un village stable.</li>
+      </ul>
+    </div>
+    <div class="source-note">
+      Source : INSEE · Wikipédia (démographie de Nangeville).
+    </div>
+  </div>
+</section>
+
+<!-- ===== DENSITÉ COMPARÉE ===== -->
+<section class="section">
+  <div class="sec-head">
+    <div class="sec-icon"></div>
+    <h2 class="sec-title">Densité comparée</h2>
+    <div class="sec-src">Réf. 2009</div>
+  </div>
+  <p>La <strong>densité de population</strong> indique le nombre d'habitants par kilomètre carré. Avec environ <strong>13,6 habitants/km²</strong> (en 2009), Nangeville est un village très peu dense — bien en dessous des moyennes départementale, régionale et nationale. C'est tout à fait caractéristique d'une <strong>commune rurale</strong>.</p>
+
+  <!--
+    Comparaison de densité (hab./km², réf. 2009).
+    Barres en CSS pur (aucune librairie) : la largeur de chaque
+    barre est proportionnelle à la valeur, rapportée au maximum
+    (France = 114,8 hab./km² = 100 %).
+      Nangeville 13,6 → 11,8 %  | Loiret 96,5 → 84,1 %
+      Centre 64,8 → 56,4 %      | France 114,8 → 100 %
+  -->
+  <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:1rem;">
+
+    <div>
+      <div style="display:flex; justify-content:space-between; font-size:0.9rem; color:#4a4238; margin-bottom:0.3rem;">
+        <span><strong>Nangeville</strong></span><span><strong>13,6</strong> hab./km²</span>
+      </div>
+      <div style="background:#e6e0d4; border-radius:4px; height:22px;">
+        <div style="width:11.8%; background:#b8923a; height:100%; border-radius:4px;"></div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex; justify-content:space-between; font-size:0.9rem; color:#4a4238; margin-bottom:0.3rem;">
+        <span>Loiret (département)</span><span>96,5 hab./km²</span>
+      </div>
+      <div style="background:#e6e0d4; border-radius:4px; height:22px;">
+        <div style="width:84.1%; background:#1e2a3a; height:100%; border-radius:4px;"></div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex; justify-content:space-between; font-size:0.9rem; color:#4a4238; margin-bottom:0.3rem;">
+        <span>Centre-Val de Loire (région)</span><span>64,8 hab./km²</span>
+      </div>
+      <div style="background:#e6e0d4; border-radius:4px; height:22px;">
+        <div style="width:56.4%; background:#1e2a3a; height:100%; border-radius:4px;"></div>
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex; justify-content:space-between; font-size:0.9rem; color:#4a4238; margin-bottom:0.3rem;">
+        <span>France (moyenne)</span><span>114,8 hab./km²</span>
+      </div>
+      <div style="background:#e6e0d4; border-radius:4px; height:22px;">
+        <div style="width:100%; background:#1e2a3a; height:100%; border-radius:4px;"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="source-note">
+    Source : INSEE (via Wikipédia) · densités de référence 2009.
+  </div>
+</section>
+
+<!-- ===== STRUCTURE PAR ÂGE ===== -->
+<section class="timeline-section">
+  <div class="tl-inner">
+    <div class="sec-head light-line">
+      <div class="sec-icon gold"></div>
+      <h2 class="sec-title">Structure par âge (2009)</h2>
+    </div>
+    <p style="color:#4a4238;">Contrairement à beaucoup de villages ruraux qui vieillissent, Nangeville présentait en 2009 une population plutôt <strong>jeune</strong>. L'<strong>indice de jeunesse</strong> — qui compare le nombre de jeunes (moins de 20 ans) à celui des personnes âgées (plus de 60 ans) — y était nettement plus élevé qu'au niveau national.</p>
+
+    <div class="kpis" style="margin-top:1.5rem;">
+      <div class="kpi"><div class="kpi-n">2,43</div><div class="kpi-l">Indice de jeunesse · Nangeville</div><div class="kpi-s">INSEE 2009</div></div>
+      <div class="kpi"><div class="kpi-n">1,06</div><div class="kpi-l">Indice de jeunesse · France</div><div class="kpi-s">INSEE 2009</div></div>
+      <div class="kpi"><div class="kpi-n">25 → 12<sup> %</sup></div><div class="kpi-l">Part des 60 ans et + (1999→2009)</div><div class="kpi-s">INSEE</div></div>
+    </div>
+
+    <div class="stat-explain" style="margin-top:1.5rem;">
+      <strong>Ce que cela signifie&nbsp;:</strong> un indice de jeunesse de 2,43 veut dire qu'il y avait à Nangeville près de deux fois et demie plus de jeunes que de personnes âgées — alors qu'en France, les deux groupes étaient presque à égalité (1,06). Entre 1999 et 2009, le village a même <strong>rajeuni</strong>&nbsp;: la part des 60 ans et plus est passée de <strong>25&nbsp;% à 12&nbsp;%</strong> de la population.
+    </div>
+    <div class="source-note">
+      Source : INSEE · recensement 2009.
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTE DE CLÔTURE ===== -->
+<section class="section">
+  <div class="stat-explain">
+    Les données présentées ici proviennent de sources officielles (INSEE, IGN, Archives départementales du Loiret) et sont mises à jour selon la disponibilité des recensements.
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 <span>Nangeville</span> · Site réalisé par la famille Lefebvre · <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
