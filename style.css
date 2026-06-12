@@ -109,6 +109,39 @@ nav {
   border-bottom: 2px solid #b8923a;
 }
 
+/* Sprachumschalter FR / EN */
+.nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  margin-left: 0.4rem;
+}
+
+.nav-lang a {
+  color: #a8bce0;
+  text-decoration: none;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 0.03em;
+}
+
+.nav-lang a:hover {
+  color: #f0d87a;
+}
+
+.nav-lang a.active {
+  color: #f0d87a;
+  border-color: #b8923a;
+  font-weight: 600;
+}
+
+.nav-lang .sep {
+  color: #5a6a82;
+}
+
 /* =========================================================
    HERO / KOPFBEREICH
    ========================================================= */
@@ -610,6 +643,15 @@ footer a {
   .nav-links a {
     padding: 0.7rem 0.2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-lang {
+    margin: 0.5rem 0 0.2rem;
+    justify-content: center;
+  }
+
+  .nav-lang a {
+    border-bottom: 1px solid transparent;
   }
 
   .hero h1 {
