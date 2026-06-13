@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us — Nangeville</title>
+<link rel="alternate" hreflang="fr" href="https://nangeville-france.github.io/nangeville/contact.html">
+<link rel="alternate" hreflang="en" href="https://nangeville-france.github.io/nangeville/en/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://nangeville-france.github.io/nangeville/contact.html">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-left">
+    <img src="../images/blason-nangeville.svg" alt="Coat of arms of Nangeville" class="nav-coat">
+    <span class="nav-title">Nangeville</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="histoire.html">History</a>
+    <a href="famille.html">Families</a>
+    <a href="village.html">The Village</a>
+    <a href="nature.html">Nature</a>
+    <a href="journal.html">Journal</a>
+    <a href="contact.html" class="active">Contact</a>
+    <span class="nav-lang"><a href="../contact.html">FR</a><span class="sep">/</span><a class="active" href="contact.html">EN</a></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-eyebrow">Loiret · Centre-Val de Loire · France</div>
+  <h1>Contact <em>us</em></h1>
+  <p class="hero-sub">Would you like to share a historical document, a photograph, your family's story, or report an error or suggestion? Write to us — every contribution is welcome.</p>
+  <div class="hero-tags">
+    <span class="tag">Archives &amp; documents</span>
+    <span class="tag">Photographs</span>
+    <span class="tag">Family stories</span>
+    <span class="tag">Corrections</span>
+  </div>
+</header>
+
+<!-- ===== DETAILS ===== -->
+<section class="section">
+  <div class="sec-head">
+    <div class="sec-icon"></div>
+    <h2 class="sec-title">Write to us</h2>
+  </div>
+  <p>The simplest way to reach us is the e-mail address below. Feel free to attach your documents (photos, archive scans, accounts) to your message.</p>
+  <div class="stat-explain" style="margin-top:1.25rem;">
+    <strong>E-mail address:</strong>
+    <a href="mailto:lefebvref08@gmail.com">lefebvref08@gmail.com</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section class="section">
+  <div class="sec-head">
+    <div class="sec-icon"></div>
+    <h2 class="sec-title">Contact form</h2>
+  </div>
+
+  <!--
+    ============================================================
+    TECHNICAL NOTE — FORM SUBMISSION
+    This is a static site (hosted on GitHub Pages): it cannot send
+    e-mails by itself. The form below is therefore NOT yet functional
+    for automatic submission.
+
+    To make it work later, two options:
+      1) Use a third-party form service such as Formspree
+         (https://formspree.io). Simply replace the action attribute
+         below with the URL provided by the service, e.g.:
+            <form action="https://formspree.io/f/YOUR_ID" method="POST">
+         and remove the mailto fallback.
+      2) Keep a simple mailto: fallback (current), which opens the
+         visitor's e-mail software.
+
+    For now, the form uses a mailto: fallback: on submission, it opens
+    a new pre-filled e-mail to the contact address.
+    ============================================================
+  -->
+  <form
+    action="mailto:lefebvref08@gmail.com"
+    method="POST"
+    enctype="text/plain"
+  >
+    <div class="form-group">
+      <label for="nom">Name</label>
+      <input type="text" id="nom" name="nom" autocomplete="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail address</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="sujet">Subject</label>
+      <select id="sujet" name="sujet">
+        <option value="Family history &amp; archives">Family history &amp; archives</option>
+        <option value="Site error">Site error</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="7" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">Send message</button>
+  </form>
+
+  <div class="source-note">
+    If you have any difficulty with the form, you can always write to us directly at
+    <a href="mailto:lefebvref08@gmail.com">lefebvref08@gmail.com</a>.
+  </div>
+</section>
+
+<!-- ===== RESPONSE TIME ===== -->
+<section class="timeline-section">
+  <div class="tl-inner">
+    <div class="stat-explain">
+      <strong>A voluntary, family project.</strong> This site is run on a voluntary basis by the Lefebvre family, in their spare time. We read every message carefully and do our best to reply as soon as possible — thank you in advance for your patience and understanding.
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 <span>Nangeville</span> · Website by the Lefebvre family · <a href="mentions-legales.html">Legal notice</a></p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
